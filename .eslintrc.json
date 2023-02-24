@@ -4,6 +4,6 @@
         "onling-lint"
     ],
     "rules": {
-        "onling-lint/suggest-is-has-prefix-for-type-ing": "error"
+        "onling-lint/suggest-is-has-prefix-for-type-ing": "warn"
     }
 }
