@@ -1,0 +1,9 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "onling-lint"
+    ],
+    "rules": {
+        "onling-lint/suggest-is-has-prefix-for-type-ing": "error"
+    }
+}

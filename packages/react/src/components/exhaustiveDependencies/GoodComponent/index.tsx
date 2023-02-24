@@ -1,11 +1,12 @@
 import {useMemo} from "react";
 import { darken } from 'polished'
 
-type GoodComponentPropsType = {
+interface GoodComponentProps {
     color: string
+    isFetching: boolean
 }
 
-export const GoodComponent: React.FC<GoodComponentPropsType> = (props) => {
+export const GoodComponent: React.FC<GoodComponentProps> = (props) => {
     const darkenedColor = useMemo(() => {
         return darken(0.3, props.color)
     }, [])

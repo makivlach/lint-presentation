@@ -1,0 +1,20 @@
+# .prettierignore
+package.json
+package-lock.json
+yarn.lock
+**/*.generated.ts
+**/__generate__/
+**/__generated__/
+**/__globalTypes.ts
+graphql-schema.json
+build/
+.next/
+**/api/src/**/client.ts
+**/src/static/data/*.json
+**/locales/**/_countries.json
+**/locales/**/__countries.json
+**/backoffice/**/tsconfig.json
+**/app.yaml
+**/app.prod.yaml
+**/app.dev.yaml
+**/Lotties/
