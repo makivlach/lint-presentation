@@ -12,20 +12,20 @@ Prezentace:
 ============
 
 1. Představit se
-    1. Otázka - Co mají společného zvířátka a lintování?
-2. Krátká teorie - co to je linter a jak vzniknul?
-3. Jít do onlingu, checkoutnout se na starou verzi a ukázat rozdíl mezi starou verzí a fixnutou
-4. Ukázat konfigurák
-5. Ukázat i linter v Rustu
-6. Jít do tohodle projektu a ukázat, že lintery neopravují coding style, ale i předcházejí bugům
-7. Ukázat common pitfalls: 
+2. Téma - Proč vás lintování zachrání před naštvanou manželkou
+3. Krátká teorie - co to je linter a jak vzniknul?
+4. Jít do onlingu, checkoutnout se na starou verzi a ukázat rozdíl mezi starou verzí a fixnutou
+5. Ukázat konfigurák `.eslintrc.json`
+6. Ukázat i linter v Rustu
+7. Jít do tohodle projektu a ukázat, že lintery neopravují coding style, ale i předcházejí bugům
+8. Ukázat common pitfalls: 
    1. JS - Console.log() leakne do produkce a potencionálně exposne chování aplikace
    2. React - referencování předchozího statu a tím pádem i řešení race condition
    3. Používání unikátního key - špatně: https://codepen.io/pen?&editors=0010&layout=left; dobře: https://codepen.io/pen?&editors=0010&layout=left
-8. Napsat si vlastní pravidlo
-9. Nastavit si lint fix před commitem
-10. Závěr -
-    11. zvířátka si odstraňují špínu, parazity, odumřelou kůži - ačkoliv se může zdát zbytečné, tak je důležité pro zdraví 
-    12. Podobně i vývojáři čistí špínu z jejich kódu od nepoužitého kódu, nedosahnutélného kódu nebo nekonzistentího formátování
-    13. Tím vývojáři zajišťují čistější, lépe pochopitelný kód a zdravou aplikaci
-    14. Proto neotálejte a lintujte!
+9. Napsat si vlastní pravidlo
+10. Nastavit si lint fix před commitem
+11. Závěr -
+    11. Odpověď na otázku - Proč vás lintování zachrání před naštvanou manželkou
+    12. Umožňuje vám mít doma pořádek, vyčistí nepoužívaný kód a vymete brouky, ALE ZEJMÉNA....
+    12. UŠETŘÍ VÁM TO PROBLÉMY
+    14. Proto neotálejte a lintujte! Konec
