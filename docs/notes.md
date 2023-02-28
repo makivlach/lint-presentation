@@ -17,12 +17,12 @@ Prezentace:
 4. Ukázat common pitfalls:
     1. JS - Console.log() leakne do produkce a potencionálně exposne chování aplikace
     2. React - referencování předchozího statu a tím pádem i řešení race condition
-    3. Používání unikátního key - špatně: https://codepen.io/pen?&editors=0010&layout=left; dobře: https://codepen.io/pen?&editors=0010&layout=left
+    3. Používání unikátního key - špatně: https://reactjs.org/redirect-to-codepen/reconciliation/index-used-as-key; dobře: https://reactjs.org/redirect-to-codepen/reconciliation/no-index-used-as-key
 5. Jít do onlingu, checkoutnout se na starou verzi a ukázat rozdíl mezi starou verzí a fixnutou
 6. Ukázat konfigurák `.eslintrc.json`
-7. Ukázat i linter v Rustu
-8. Jít do tohodle projektu a ukázat, že lintery neopravují coding style, ale i předcházejí bugům
-9. Napsat si vlastní pravidlo - místo fetching nebo isFetching dát isLoading
+7. Ukázat i linter v jiném jazyce (Rust)
+8. Jít do tohodle projektu a ukázat, že lintery neopravují jen coding style, ale i předcházejí bugům
+9. Napsat si vlastní pravidlo - místo `fetching` nebo `isFetching` dát `isLoading`
 10. Nastavit si lint fix před commitem
 11. Závěr -
     11. Odpověď na otázku - Proč vás lintování zachrání před naštvanou manželkou
