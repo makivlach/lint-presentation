@@ -1,6 +1,7 @@
-import { BadComponent } from '../../components/exhaustiveDependencies/BadComponent'
 import { useRef, useState } from 'react'
-import { GoodComponent } from '../../components/exhaustiveDependencies/GoodComponent'
+import { BadComponent } from '~/components/exhaustiveDependencies/BadComponent'
+import { GoodComponent } from '~/components/exhaustiveDependencies/GoodComponent'
+import { AppLayout } from '~/components/layout/AppLayout'
 
 type ExhaustiveDependenciesProps = {}
 export const ExhaustiveDependencies: React.FC<ExhaustiveDependenciesProps> = (
@@ -19,7 +20,7 @@ export const ExhaustiveDependencies: React.FC<ExhaustiveDependenciesProps> = (
     setBadColor(badRef.current?.value)
   }
 
-  return <div>
+  return <AppLayout>
     <div>
       <h2>
         Bad component
@@ -41,5 +42,5 @@ export const ExhaustiveDependencies: React.FC<ExhaustiveDependenciesProps> = (
         <button onClick={onGoodClick}>Vykresli ztmavenou barvičku</button>
       </div>
     </div>
-  </div>
+  </AppLayout>
 }

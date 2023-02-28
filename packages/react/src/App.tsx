@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { routes } from './constants'
-import { HomePage } from './pages/Home'
-import { ExhaustiveDependencies } from './pages/ExhaustiveDependencies'
+import { HomePage } from '~/pages/Home'
+import { ExhaustiveDependencies } from '~/pages/ExhaustiveDependencies'
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <main>
         <Routes>
           <Route path={routes.HomePage}>

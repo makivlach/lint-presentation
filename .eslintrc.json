@@ -1,8 +1,8 @@
 {
     "parser": "@typescript-eslint/parser",
     "plugins": [
-        "onling-lint",
-        "react-hooks"
+        "react-hooks",
+        "onling-lint"
     ],
     "extends": [
         "prettier"
