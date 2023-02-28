@@ -1,8 +1,45 @@
-type ExhaustiveDependenciesProps = {
-  fetching?: boolean
-}
+import { BadComponent } from '../../components/exhaustiveDependencies/BadComponent'
+import { useRef, useState } from 'react'
+import { GoodComponent } from '../../components/exhaustiveDependencies/GoodComponent'
+
+type ExhaustiveDependenciesProps = {}
 export const ExhaustiveDependencies: React.FC<ExhaustiveDependenciesProps> = (
-  props
+  props,
 ) => {
-  return <div></div>
+  const [goodColor, setGoodColor] = useState<string | undefined>('#000')
+  const [badColor, setBadColor] = useState<string | undefined>('#000')
+
+  const badRef = useRef<HTMLInputElement>(null)
+  const goodRef = useRef<HTMLInputElement>(null)
+
+  const onGoodClick = () => {
+    setGoodColor(goodRef.current?.value)
+  }
+  const onBadClick = () => {
+    setBadColor(badRef.current?.value)
+  }
+
+  return <div>
+    <div>
+      <h2>
+        Bad component
+      </h2>
+      <div>
+        <input type='text' ref={badRef} />
+        <BadComponent color={badColor} />
+        <button onClick={onBadClick}>Vykresli ztmavenou barvičku</button>
+      </div>
+    </div>
+    <div>
+
+      <h2>
+        Good component
+      </h2>
+      <div>
+        <input type='text' ref={goodRef} />
+        <GoodComponent color={goodColor} />
+        <button onClick={onGoodClick}>Vykresli ztmavenou barvičku</button>
+      </div>
+    </div>
+  </div>
 }

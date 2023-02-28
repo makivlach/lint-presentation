@@ -1,9 +1,14 @@
 {
     "parser": "@typescript-eslint/parser",
     "plugins": [
-        "onling-lint"
+        "onling-lint",
+        "react-hooks"
+    ],
+    "extends": [
+        "prettier"
     ],
     "rules": {
         "onling-lint/suggest-is-has-prefix-for-type-ing": "warn"
+        //        "react-hooks/exhaustive-deps": "warn"
     }
 }

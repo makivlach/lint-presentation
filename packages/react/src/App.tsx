@@ -1,16 +1,15 @@
-import React from 'react';
-import {Route, Routes, Router } from 'react-router-dom';
-import {AppLayout} from "./components/layout/AppLayout";
-import {routes} from "./constants";
-import {HomePage} from "./pages/Home";
-import {ExhaustiveDependencies} from "./pages/ExhaustiveDependencies";
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { routes } from './constants'
+import { HomePage } from './pages/Home'
+import { ExhaustiveDependencies } from './pages/ExhaustiveDependencies'
 
 function App() {
   return (
     <div className="App">
       <main>
         <Routes>
-          <Route path={routes.HomePage} element={<AppLayout />}>
+          <Route path={routes.HomePage}>
             <Route index element={<HomePage />} />
             <Route path={routes.ExhaustiveDependencies} element={<ExhaustiveDependencies />} />
 
