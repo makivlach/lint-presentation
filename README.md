@@ -6,6 +6,8 @@ Projekt vzniknul pro potřeby prezentace o lintování. Jde o monorepo , které 
 * eslint-plugin-onling-lint
 * react
 
+Projekt dále obsahuje import aliasy, aby se nemusely používat relativní importy
+
 ## eslint-plugin-onling-lint
 
 Je package, který obsahuje konfiguraci a deklaraci vlastních pravidel pro eslint. Je nastavený s typescriptem a každé
