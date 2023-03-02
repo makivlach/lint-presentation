@@ -24,6 +24,7 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
+    "lint:fix": "lerna run lint:fix",
     "lint": "lerna run lint",
     "test": "lerna run test",
     "dev": "yarn workspace lint-presentaton start"

@@ -8,7 +8,7 @@
         "prettier"
     ],
     "rules": {
-        "onling-lint/suggest-is-has-prefix-for-type-ing": "warn"
+        "onling-lint/suggest-is-loading-instead-fetching": "warn"
         //        "react-hooks/exhaustive-deps": "warn"
     }
 }
